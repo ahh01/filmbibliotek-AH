@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import { fetchMovies } from "../services/API";
-import { useEffect } from "react";
 
 function NavigationMenu() {
   
