@@ -1,0 +1,8 @@
+# All robots are allowed
+User-agent: *
+
+Allow: /src/pages/
+
+Disallow: /node_modules/
+
+# Sitemap:  http://localhost:5173/sitemap.xml

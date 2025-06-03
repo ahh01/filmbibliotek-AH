@@ -5,11 +5,13 @@ export const fetchMovies = createAsyncThunk(
   "movie/fetchMovies", // Här ger jag ett namn för action-typen inuti måsvingarna
   async () => {
     const response = await fetch(
-      "http://www.omdbapi.com/?i=tt3896198&apikey=77812762"
+      "http://www.omdbapi.com/?apikey=77812762&s=movie&type=movie"
     );
-    console.log(response);
+    
     const data = await response.json();
-    return data; // här returneras data till reducern
+    console.log(data)
+    return data.Search; // här returneras data till reducern
+    
   }
 );
 
