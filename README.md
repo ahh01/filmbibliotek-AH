@@ -19,6 +19,18 @@ SEO-åtgärder:
 Google Analytics och Tag Manager: För att spåra sidvisningar och interaktioner, inklusive när filmer läggs till och tas bort från favoritlistan.
 Metatags: Inkluderar title, description och og-tags för social delning.
 
+## Funktioner
+
+- Sök efter filmer via titel
+- Visa detaljer om valda filmer
+- Lägg till och ta bort filmer från favoriter
+- Navigera mellan startsida och favoritsida
+- Responsiv design för mobil, surfplatta och desktop
+
+## API-nyckel
+
+För att använda OMDb API behöver du en gratis API-nyckel. Skapa ett konto på http://www.omdbapi.com/apikey.aspx och lägg in din nyckel i ".env"-filen:
+
 
 ## Installation
 
@@ -32,7 +44,7 @@ För att installera och köra projektet lokalt, följ stegen nedan:
 
 2. **Navigera till projektkatalogen:**
      
-     cd filmkväll
+     cd filmbibliotek-AH
 
 3. **Installera nödvändiga beroenden:**
 
@@ -44,4 +56,4 @@ För att installera och köra projektet lokalt, följ stegen nedan:
   npm install cypress --save-dev
 
 2. **Kör Cypress:**
-  npm run cypress:open
+  npx cypress open
